@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Search Engine With JS</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="offscreen">Search me a wikipedia powered search engine</h1>
+      <section class="searchEntry">
+        <h2 class="Logo">Search Term Entry</h2>
+        <div class="logo" aria-hidden="true">SearchMe</div>
+        <form id="searchBar" class="searchBar">
+          <label class="offscreen" for="search">
+            Enter a search term or phrase
+          </label>
+          <!-- input text for search -->
+          <input id="search" type="text" autocomplete="off" />
+          <!-- closex -->
+          <div
+            id="clear"
+            class="none button clear"
+            role="button"
+            tabindex="0"
+            aria-label="clear search term"
+          >
+            <i class="far fa-times-circle"></i>
+          </div>
+          <!-- button -->
+          <button
+            class="button searchButton"
+            id="searchButton"
+            type="submit"
+            aria-label="Submit Button"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </section>
+      <!-- displaying 13 results -->
+      <section class="result">
+        <h2 class="offscreen">Search Result</h2>
+        <div class="statsBar">
+          <div id="stats" class="stats" aria-live="assertive"></div>
+        </div>
+        <div id="searchResults" class="searchResults">
+          <div class="resultItem">
+            <div class="resultTitle">
+              <a href="#">Jon Snow</a>
+            </div>
+            <div class="resultContents">
+              <div class="resultImages">
+                <img
+                  src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"
+                  alt="dachsun"
+                />
+              </div>
+              <div class="resultText">
+                <p class="resultDescription">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  eum nobis accusantium nam a placeat velit! Nihil dignissimos
+                  nobis consectetur modi delectus fugiat cum sit corrupti
+                  molestias, quidem ad alias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><span aria-hidden="true">Made with By Gandhi</span></p>
+    </footer>
+  </body>
+</html>
